@@ -1,16 +1,16 @@
-package com.yoyoyo666.test.spring.configclient;
+package com.yoyoyo666.test.spring.bus;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableDiscoveryClient
+@EnableConfigServer
 @SpringBootApplication
-@MapperScan("com.yoyoyo666.test.spring.configclient.mapper")
-public class ConfigClientApplication {
+public class ConfigServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class, args);
+        SpringApplication.run(ConfigServerApplication.class, args);
     }
 }

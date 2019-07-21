@@ -1,17 +1,16 @@
-package com.yoyoyo666.test.spring.configclient.controller;
+package com.yoyoyo666.test.spring.bus.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author BaoZhou
- * @date 2018/8/30
- */
-@RestController
-public class ConfigController {
 
-    @Value("${spring.datasource.url}")
+@RestController
+@RefreshScope
+public class BusController {
+
+    @Value("${test.name}")
     private String env;
 
     @GetMapping("/env")

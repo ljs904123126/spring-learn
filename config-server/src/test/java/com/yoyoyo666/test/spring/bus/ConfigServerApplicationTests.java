@@ -1,4 +1,4 @@
-package com.yoyoyo666.test.spring.configserver;
+package com.yoyoyo666.test.spring.bus;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
