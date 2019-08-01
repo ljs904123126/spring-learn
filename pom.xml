@@ -73,6 +73,7 @@
         <module>config-server</module>
         <module>eureka-server</module>
         <module>spring-bus</module>
+        <module>spring-web</module>
     </modules>
 
 
