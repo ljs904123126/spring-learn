@@ -74,6 +74,7 @@
         <module>eureka-server</module>
         <module>spring-bus</module>
         <module>spring-web</module>
+        <module>spring-feign</module>
     </modules>
 
 

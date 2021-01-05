@@ -3,10 +3,13 @@ server:
 eureka:
   instance:
     hostname: eureka-server
+    ip-address: 127.0.0.1
+#    prefer-ip-address: true
   client:
     #Don't register itself on Eureka
     register-with-eureka: false
     #Don't get register message from Eureka
     fetch-registry: false
     service-url:
-       default-zone: http://localhost:8762/eureka
+       defaultZone: http://localhost:8762/eureka
+
